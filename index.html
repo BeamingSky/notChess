@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="markContainer">
+      <div class="hourglassss" id="marks"></div>
+    </div>
+    <!--  -->
+    <div class="timers">
+      <div class="hourglass" id="timer">05:00</div>
+    </div>
+    <!--  -->
+    <div class="button-container">
+      <button id="startButton" class="button1" onclick="startTimer()">
+        START
+      </button>
+    </div>
+    <!--  -->
+    <div class="random"></div>
+    <!--  -->
+    <div id="crack" class="score">
+      <img id="randomImage" src="Bird1.png" alt="Random Image" width="100px" />
+    </div>
+    <!--  -->
+    <table id="chessboard" rules="none" width="900px">
+      <tr align="center">
+        <td id="none1"></td>
+        <td id="none2"></td>
+        <th class="black" id="c1" onclick="fun('c1','black','a',3)">
+          <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+        </th>
+        <th class="white" id="c2" onclick="fun('c2','white','a',4)">
+          <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+        </th>
+        <th class="black" id="c3" onclick="fun('c3','black','a',5)">
+          <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+        </th>
+        <th class="white" id="c4" onclick="fun('c4','white','a',6)">
+          <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+        </th>
+        <th class="black" id="c5" onclick="fun('c5','black','a',7)">
+          <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+        </th>
+        <th class="white" id="c6" onclick="fun('c6','white','a',8)">
+          <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+        </th>
+        <th class="black" id="c7" onclick="fun('c7','black','a',9)">
+          <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+        </th>
+        <th class="white" id="c8" onclick="fun('c8','white','a',10)">
+          <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+        </th>
+        <th class="black" id="c9" onclick="fun('c9','black','a',11)">
+          <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+        </th>
+        <td id="none3"></td>
+        <td id="none4"></td>
+      </tr>
+      <tr align="center">
+        <td></td>
+        <th class="black" id="c10" onclick="fun('c10','black','b',2)"></th>
+        <th class="white" id="c11" onclick="fun('c11','white','b',3)"></th>
+        <th class="black" id="c12" onclick="fun('c12','black','b',4)"></th>
+        <th class="white" id="c13" onclick="fun('c13','white','b',5)"></th>
+        <th class="black" id="c14" onclick="fun('c14','black','b',6)"></th>
+        <th class="white" id="c15" onclick="fun('c15','white','b',7)"></th>
+        <th class="black" id="c16" onclick="fun('c16','black','b',8)"></th>
+        <th class="white" id="c17" onclick="fun('c17','white','b',9)"></th>
+        <th class="black" id="c18" onclick="fun('c18','black','b',10)"></th>
+        <th class="white" id="c19" onclick="fun('c19','white','b',11)"></th>
+        <th class="black" id="c20" onclick="fun('c20','black','b',12)"></th>
+        <td></td>
+      </tr>
+      <tr align="center">
+        <th class="black" id="c21" onclick="fun('c21','black','c',1)">
+          <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+        </th>
+        <th class="white" id="c22" onclick="fun('c22','white','c',2)"></th>
+        <th class="black" id="c23" onclick="fun('c23','black','c',3)"></th>
+        <th class="white" id="c24" onclick="fun('c24','white','c',4)"></th>
+        <th class="black" id="c25" onclick="fun('c25','black','c',5)"></th>
+        <th class="white" id="c26" onclick="fun('c26','white','c',6)"></th>
+        <th class="black" id="c27" onclick="fun('c27','black','c',7)"></th>
+        <th class="white" id="c28" onclick="fun('c28','white','c',8)"></th>
+        <th class="black" id="c29" onclick="fun('c29','black','c',9)"></th>
+        <th class="white" id="c30" onclick="fun('c30','white','c',10)"></th>
+        <th class="black" id="c31" onclick="fun('c31','black','c',11)"></th>
+        <th class="white" id="c32" onclick="fun('c32','white','c',12)"></th>
+        <th class="black" id="c33" onclick="fun('c33','black','c',13)">
+          <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+        </th>
+      </tr>
+      <tr align="center">
+        <th class="white" id="c34" onclick="fun('c34','white','d',1)">
+          <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+        </th>
+        <th class="black" id="c35" onclick="fun('c35','black','d',2)"></th>
+        <th class="white" id="c36" onclick="fun('c36','white','d',3)"></th>
+        <th class="black" id="c37" onclick="fun('c37','black','d',4)"></th>
+        <th class="white" id="c38" onclick="fun('c38','white','d',5)"></th>
+        <th class="black" id="c39" onclick="fun('c39','black','d',6)"></th>
+        <th class="white" id="c40" onclick="fun('c40','white','d',7)"></th>
+        <th class="black" id="c41" onclick="fun('c41','black','d',8)"></th>
+        <th class="white" id="c42" onclick="fun('c42','white','d',9)"></th>
+        <th class="black" id="c43" onclick="fun('c43','black','d',10)"></th>
+        <th class="white" id="c44" onclick="fun('c44','white','d',11)"></th>
+        <th class="black" id="c45" onclick="fun('c45','black','d',12)"></th>
+        <th class="white" id="c46" onclick="fun('c46','white','d',13)">
+          <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+        </th>
+      </tr>
+      <tr align="center">
+        <th class="black" id="c47" onclick="fun('c47','black','e',1)">
+          <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+        </th>
+        <th class="white" id="c48" onclick="fun('c48','white','e',2)"></th>
+        <th class="black" id="c49" onclick="fun('c49','black','e',3)"></th>
+        <th class="white" id="c50" onclick="fun('c50','white','e',4)"></th>
+        <th class="black" id="c51" onclick="fun('c51','black','e',5)"></th>
+        <th class="white" id="c52" onclick="fun('c52','white','e',6)"></th>
+        <th class="black" id="c53" onclick="fun('c53','black','e',7)"></th>
+        <th class="white" id="c54" onclick="fun('c54','white','e',8)"></th>
+        <th class="black" id="c55" onclick="fun('c55','black','e',9)"></th>
+        <th class="white" id="c56" onclick="fun('c56','white','e',10)"></th>
+        <th class="black" id="c57" onclick="fun('c57','black','e',11)"></th>
+        <th class="white" id="c58" onclick="fun('c58','white','e',12)"></th>
+        <th class="black" id="c59" onclick="fun('c59','black','e',13)">
+          <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+        </th>
+      </tr>
+      <tr align="center">
+        <th class="white" id="c60" onclick="fun('c60','white','f',1)">
+          <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+        </th>
+        <th class="black" id="c61" onclick="fun('c61','black','f',2)"></th>
+        <th class="white" id="c62" onclick="fun('c62','white','f',3)"></th>
+        <th class="black" id="c63" onclick="fun('c63','black','f',4)"></th>
+        <th class="white" id="c64" onclick="fun('c64','white','f',5)"></th>
+        <th class="yellow" id="c65" onclick="fun('c65','yellow','f',6)"></th>
+        <th class="yellow" id="c66" onclick="fun('c66','yellow','f',7)"></th>
+        <th class="yellow" id="c67" onclick="fun('c67','yellow','f',8)"></th>
+        <th class="white" id="c68" onclick="fun('c68','white','f',9)"></th>
+        <th class="black" id="c69" onclick="fun('c69','black','f',10)"></th>
+        <th class="white" id="c70" onclick="fun('c70','white','f',11)"></th>
+        <th class="black" id="c71" onclick="fun('c71','black','f',12)"></th>
+        <th class="white" id="c72" onclick="fun('c72','white','f',13)">
+          <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+        </th>
+      </tr>
+      <tr align="center">
+        <th class="black" id="c73" onclick="fun('c73','black','g',1 )">
+          <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+        </th>
+        <th class="white" id="c74" onclick="fun('c74','white','g',2 )"></th>
+        <th class="black" id="c75" onclick="fun('c75','black','g',3 )"></th>
+        <th class="white" id="c76" onclick="fun('c76','white','g',4 )"></th>
+        <th class="black" id="c77" onclick="fun('c77','black','g',5 )"></th>
+        <th class="yellow" id="c78" onclick="fun('c78','yellow','g',6 )"></th>
+        <th class="yellow" id="c79" onclick="fun('c79','black','g',7 )"></th>
+        <th class="yellow" id="c80" onclick="fun('c80','yellow','g',8 )"></th>
+        <th class="black" id="c81" onclick="fun('c81','black','g',9 )"></th>
+        <th class="white" id="c82" onclick="fun('c82','white','g',10)"></th>
+        <th class="black" id="c83" onclick="fun('c83','black','g',11)"></th>
+        <th class="white" id="c84" onclick="fun('c84','white','g',12)"></th>
+        <th class="black" id="c85" onclick="fun('c85','black','g',13)">
+          <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+        </th>
+      </tr>
+      <tr align="center">
+        <th class="white" id="c86" onclick="fun('c86','white','h',1 )">
+          <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+        </th>
+        <th class="black" id="c87" onclick="fun('c87','black','h',2 )"></th>
+        <th class="white" id="c88" onclick="fun('c88','white','h',3 )"></th>
+        <th class="black" id="c89" onclick="fun('c89','black','h',4 )"></th>
+        <th class="white" id="c90" onclick="fun('c90','white','h',5 )"></th>
+        <th class="yellow" id="c91" onclick="fun('c91','yellow','h',6 )"></th>
+        <th class="yellow" id="c92" onclick="fun('c92','yellow','h',7 )"></th>
+        <th class="yellow" id="c93" onclick="fun('c93','yellow','h',8 )"></th>
+        <th class="white" id="c94" onclick="fun('c94','white','h',9 )"></th>
+        <th class="black" id="c95" onclick="fun('c95','black','h',10)"></th>
+        <th class="white" id="c96" onclick="fun('c96','white','h',11)"></th>
+        <th class="black" id="c97" onclick="fun('c97','black','h',12)"></th>
+        <th class="white" id="c98" onclick="fun('c98','white','h',13)">
+          <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+        </th>
+      </tr>
+      <tr align="center">
+        <th id="c99" class="black" onclick="fun('c99','black','i',  1 )">
+          <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+        </th>
+        <th id="c100" class="white" onclick="fun('c100','white','i',2 )"></th>
+        <th id="c101" class="black" onclick="fun('c101','black','i',3 )"></th>
+        <th id="c102" class="white" onclick="fun('c102','white','i',4 )"></th>
+        <th id="c103" class="black" onclick="fun('c103','black','i',5 )"></th>
+        <th id="c104" class="white" onclick="fun('c104','white','i',6 )"></th>
+        <th id="c105" class="black" onclick="fun('c105','black','i',7 )"></th>
+        <th id="c106" class="white" onclick="fun('c106','white','i',8 )"></th>
+        <th id="c107" class="black" onclick="fun('c107','black','i',9 )"></th>
+        <th id="c108" class="white" onclick="fun('c108','white','i',10)"></th>
+        <th id="c109" class="black" onclick="fun('c109','black','i',11)"></th>
+        <th id="c110" class="white" onclick="fun('c110','white','i',12)"></th>
+        <th id="c111" class="black" onclick="fun('c111','black','i',13)">
+          <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+        </th>
+      </tr>
+      <tr align="center">
+        <th id="c112" class="white" onclick="fun('c112','white','j',1 )">
+          <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+        </th>
+        <th id="c113" class="black" onclick="fun('c113','black','j',2 )"></th>
+        <th id="c114" class="white" onclick="fun('c114','white','j',3 )"></th>
+        <th id="c115" class="black" onclick="fun('c115','black','j',4 )"></th>
+        <th id="c116" class="white" onclick="fun('c116','white','j',5 )"></th>
+        <th id="c117" class="black" onclick="fun('c117','black','j',6 )"></th>
+        <th id="c118" class="white" onclick="fun('c118','white','j',7 )"></th>
+        <th id="c119" class="black" onclick="fun('c119','black','j',8 )"></th>
+        <th id="c120" class="white" onclick="fun('c120','white','j',9 )"></th>
+        <th id="c121" class="black" onclick="fun('c121','black','j',10)"></th>
+        <th id="c122" class="white" onclick="fun('c122','white','j',11)"></th>
+        <th id="c123" class="black" onclick="fun('c123','black','j',12)"></th>
+        <th id="c124" class="white" onclick="fun('c124','white','j',13)">
+          <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+        </th>
+      </tr>
+      <tr align="center">
+        <th id="c125" class="black" onclick="fun('c125','black','k',1 )">
+          <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+        </th>
+        <th id="c126" class="white" onclick="fun('c126','white','k',2 )"></th>
+        <th id="c127" class="black" onclick="fun('c127','black','k',3 )"></th>
+        <th id="c128" class="white" onclick="fun('c128','white','k',4 )"></th>
+        <th id="c129" class="black" onclick="fun('c129','black','k',5 )"></th>
+        <th id="c130" class="white" onclick="fun('c130','white','k',6 )"></th>
+        <th id="c131" class="black" onclick="fun('c131','black','k',7 )"></th>
+        <th id="c132" class="white" onclick="fun('c132','white','k',8 )"></th>
+        <th id="c133" class="black" onclick="fun('c133','black','k',9 )"></th>
+        <th id="c134" class="white" onclick="fun('c134','white','k',10)"></th>
+        <th id="c135" class="black" onclick="fun('c135','black','k',11)"></th>
+        <th id="c136" class="white" onclick="fun('c136','white','k',12)"></th>
+        <th id="c137" class="black" onclick="fun('c137','black','k',13)">
+          <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+        </th>
+      </tr>
+      <tr align="center">
+        <td></td>
+        <th id="c138" class="black" onclick="fun('c138','black','l',2)"></th>
+        <th id="c139" class="white" onclick="fun('c139','white','l',3)"></th>
+        <th id="c140" class="black" onclick="fun('c140','black','l',4)"></th>
+        <th id="c141" class="white" onclick="fun('c141','white','l',5)"></th>
+        <th id="c142" class="black" onclick="fun('c142','black','l',6)"></th>
+        <th id="c143" class="white" onclick="fun('c143','white','l',7)"></th>
+        <th id="c144" class="black" onclick="fun('c144','black','l',8)"></th>
+        <th id="c145" class="white" onclick="fun('c145','white','l',9)"></th>
+        <th id="c146" class="black" onclick="fun('c146','black','l',10)"></th>
+        <th id="c147" class="white" onclick="fun('c147','white','l',11)"></th>
+        <th id="c148" class="black" onclick="fun('c148','black','l',12)"></th>
+        <td></td>
+      </tr>
+      <tr align="center">
+        <td></td>
+        <td></td>
+        <th id="c149" class="black" onclick="fun('c149','black','m',3)">
+          <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+        </th>
+        <th id="c150" class="white" onclick="fun('c150','white','m',4)">
+          <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+        </th>
+        <th id="c151" class="black" onclick="fun('c151','black','m',5)">
+          <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+        </th>
+        <th id="c152" class="white" onclick="fun('c152','white','m',6)">
+          <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+        </th>
+        <th id="c153" class="black" onclick="fun('c153','black','m',7)">
+          <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+        </th>
+        <th id="c154" class="white" onclick="fun('c154','white','m',8)">
+          <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+        </th>
+        <th id="c155" class="black" onclick="fun('c155','black','m',9)">
+          <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+        </th>
+        <th id="c156" class="white" onclick="fun('c156','white','m',10)">
+          <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+        </th>
+        <th id="c157" class="black" onclick="fun('c157','black','m',11)">
+          <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+        </th>
+        <td></td>
+      </tr>
+    </table>
+
+    <!-- <div id="customAlert" class="alert">
+      <span class="closebtn" onclick="closeAlert()">&times;</span>
+      <strong>Alert!</strong> This is a custom alert box.
+    </div> -->
+
+    <div id="bambo" class="opacity">
+      <img id="bamboo" class="tile" src="Dragon1.png" alt="bamboo" />
+    </div>
+    <div id="bamb" class="opacity">
+      <img id="bamboo" class="tile" src="Wind1.png" alt="bamboo" />
+    </div>
+    <div id="bam" class="opacity">
+      <img id="bamboo" class="tile" src="Bird1.png" alt="bamboo" />
+    </div>
+    <div id="ba" class="opacity">
+      <img id="bamboo" class="tile" src="Bamboo1.png" alt="bamboo" />
+    </div>
+  </body>
+  <script src="main2.js"></script>
+  <script src="main.js"></script>
+</html>
