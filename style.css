@@ -126,6 +126,16 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 767px) {
+  .timers {
+    /* Styles for mobile view */
+    top: 10%;
+    left: 90%;
+    /* Additional adjustments as needed */
+    transform: translate(-50%, -50%);
+  }
+}
+
 .hourglass {
   width: 0;
   height: 0;
@@ -160,6 +170,16 @@ body {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .markContainer {
+    /* Styles for mobile view */
+    top: 10%;
+    left: 50%;
+    /* Additional adjustments as needed */
+    transform: translate(-50%, -50%);
+  }
 }
 
 .hourglassss {
@@ -269,9 +289,18 @@ p {
     inset rgba(0, 0, 0, 0.12) 0px 4px 6px,
     inset rgba(0, 0, 0, 0.17) 0px 12px 13px,
     inset rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
   border-radius: 5px;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .score {
+    /* Styles for mobile view */
+    top: 10%;
+    left: 10%;
+    /* Additional adjustments as needed */
+    transform: translate(-50%, -50%);
+  }
 }
 
 #crack {
