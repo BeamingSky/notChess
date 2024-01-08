@@ -136,6 +136,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 967px) {
+  .timers {
+    /* Styles for mobile view */
+    top: 10%;
+    left: 90%;
+    /* Additional adjustments as needed */
+    transform: translate(-50%, -50%);
+  }
+}
+
 .hourglass {
   width: 0;
   height: 0;
@@ -173,6 +183,16 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .markContainer {
+    /* Styles for mobile view */
+    top: 10%;
+    left: 50%;
+    /* Additional adjustments as needed */
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 967px) {
   .markContainer {
     /* Styles for mobile view */
     top: 10%;
@@ -294,6 +314,16 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+  .score {
+    /* Styles for mobile view */
+    top: 10%;
+    left: 10%;
+    /* Additional adjustments as needed */
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 967px) {
   .score {
     /* Styles for mobile view */
     top: 10%;
